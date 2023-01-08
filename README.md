@@ -29,7 +29,9 @@ Sub ticker_analysis()
     rowcount = ws.Cells(Rows.Count, 1).End(xlUp).Row
 
 
-For rowindex = 2 To rowcount  'time to loop through every row
+'time to loop through every row
+
+For rowindex = 2 To rowcount
     
         If ws.Cells(rowindex + 1, 1).Value <> ws.Cells(rowindex, 1).Value Then
         
