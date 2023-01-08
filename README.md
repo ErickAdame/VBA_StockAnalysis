@@ -28,8 +28,8 @@ Sub ticker_analysis()
     'Calculate the row count for each worksheet - confirmed with msgbox
     rowcount = ws.Cells(Rows.Count, 1).End(xlUp).Row
 
- 'time to loop through every row
-For rowindex = 2 To rowcount
+
+For rowindex = 2 To rowcount  'time to loop through every row
     
         If ws.Cells(rowindex + 1, 1).Value <> ws.Cells(rowindex, 1).Value Then
         
